@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Галерея</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef0f2;
+    --text: #23272b;
+    --muted: #6a7178;
+    --line: #d3d8dd;
+    --accent: #3b5b7a;
+    --tile: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1e22;
+      --text: #e3e6ea;
+      --muted: #9aa2ab;
+      --line: #33393f;
+      --accent: #8fb3d6;
+      --tile: #24282d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+  }
+  main { max-width: 1000px; margin: 0 auto; padding: 32px 16px 64px; }
+
+  nav {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  section { text-align: center; margin-bottom: 56px; }
+  section + section { border-top: 1px solid var(--line); padding-top: 40px; }
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0 0 24px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 16px;
+  }
+  @media (max-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+
+  figure { margin: 0; }
+  figure button {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 8px;
+    border: 1px solid var(--line);
+    background: var(--tile);
+    cursor: copy;
+    border-radius: 4px;
+  }
+  figure button:hover { border-color: var(--accent); }
+  figure button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+  }
+  figcaption {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .note {
+    margin-top: 24px;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  .hint { text-align: center; color: var(--muted); font-size: 14px; margin-top: -24px; margin-bottom: 40px; }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 20px);
+    background: var(--text);
+    color: var(--bg);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s, transform .2s;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+  @media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <nav id="nav"></nav>
+  <p class="hint">Нажмите на картинку, чтобы скопировать прямую ссылку</p>
+  <div id="gallery"></div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script>
+  const nav = document.getElementById("nav");
+  const root = document.getElementById("gallery");
+  const toast = document.getElementById("toast");
+  let toastTimer;
+
+  function showToast(text) {
+    toast.textContent = text;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 1600);
+  }
+
+  async function copy(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      showToast("Ссылка скопирована");
+    } catch {
+      prompt("Скопируйте ссылку:", text);
+    }
+  }
+
+  GALLERY.forEach((section, i) => {
+    const id = "s" + (i + 1);
+
+    const link = document.createElement("a");
+    link.href = "#" + id;
+    link.textContent = section.title;
+    nav.appendChild(link);
+
+    const sec = document.createElement("section");
+    sec.id = id;
+
+    const h = document.createElement("h2");
+    h.textContent = section.title.toUpperCase();
+    sec.appendChild(h);
+
+    const grid = document.createElement("div");
+    grid.className = "grid";
+
+    section.items.forEach(item => {
+      const url = new URL(item.src, location.href).href;
+      const fig = document.createElement("figure");
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.title = "Скопировать ссылку";
+      btn.addEventListener("click", () => copy(url));
+
+      const img = document.createElement("img");
+      img.src = item.src;
+      img.alt = item.name;
+      img.loading = "lazy";
+      btn.appendChild(img);
+
+      const cap = document.createElement("figcaption");
+      cap.textContent = item.name;
+
+      fig.append(btn, cap);
+      grid.appendChild(fig);
+    });
+
+    sec.appendChild(grid);
+
+    if (section.note) {
+      const p = document.createElement("p");
+      p.className = "note";
+      p.innerHTML = section.note;
+      sec.appendChild(p);
+    }
+
+    root.appendChild(sec);
+  });
+
+  if (GALLERY.length < 2) nav.remove();
+</script>
+</body>
+</html>
