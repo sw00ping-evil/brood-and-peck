@@ -38,7 +38,7 @@ const GALLERY = [
       { src: "images/какаду.png", name: "Какаду" },
       { src: "images/кряква.png", name: "Кряква" },
       { src: "images/неразлучники.png", name: "Неразлучники" },
-      { src: "images/чайка.png", name: "Чайка" },
+      { src: "images/chaka.png", name: "Чайка" },
     ],
   },
   {
