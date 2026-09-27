@@ -81,4 +81,47 @@ const GALLERY = [
       { src: "images/рыбка хирург.png", name: "Рыбка-хирург" },
     ],
   },
+  {
+    title: "Аксессуары",
+    items: [
+      { src: "images/cage.png", name: "Клетка" },
+      { src: "images/cathouse.png", name: "Кошачий домик" },
+      { src: "images/catpillow.png", name: "Лежанка для кошки" },
+      { src: "images/catpillow2.png", name: "Лежанка для кошки" },
+      { src: "images/hamsterhouse.png", name: "Домик для хомяка" },
+    ],
+  },
+  {
+    title: "Зоны",
+    items: [
+      { src: "images/forest.png", name: "Лес" },
+      { src: "images/meadow.png", name: "Луг" },
+      { src: "images/boloto.png", name: "Болото" },
+      { src: "images/sea.png", name: "Море" },
+      { src: "images/coffeezone.png", name: "Кофейная зона" },
+      { src: "images/waitingzone.png", name: "Зона ожидания" },
+      { src: "images/vetzone.png", name: "Ветеринарная зона" },
+      { src: "images/vetzone2.png", name: "Ветеринарная зона" },
+    ],
+  },
+  {
+    title: "Вывески",
+    items: [
+      { src: "images/вывеска22.png", name: "Вывеска" },
+      { src: "images/вывеска22244.png", name: "Вывеска" },
+      { src: "images/вывеска222343.png", name: "Вывеска" },
+    ],
+  },
+  {
+    title: "Варианты подписей",
+    items: [
+      { src: "images/вариант1.png", name: "Вариант 1" },
+      { src: "images/вариант2.png", name: "Вариант 2" },
+      { src: "images/вариант3.png", name: "Вариант 3" },
+      { src: "images/вариант 4.png", name: "Вариант 4" },
+      { src: "images/вариант2222234445556.png", name: "Вариант 5" },
+      { src: "images/variant1.png", name: "Вариант 6" },
+      { src: "images/hepartofthefamilyvar.png", name: "Вариант 7" },
+    ],
+  },
 ];
