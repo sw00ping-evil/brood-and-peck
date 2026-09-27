@@ -56,6 +56,11 @@ const GALLERY = [
       { src: "images/чихуа.png", name: "Чихуа" },
       { src: "images/чихи.png", name: "Чихи" },
       { src: "images/yandextaxi.png", name: "Такса" },
+      { src: "images/jack.png", name: "Джек-рассел-терьер" },
+      { src: "images/french.png", name: "Французский бульдог" },
+      { src: "images/spaniel.png", name: "Спаниель" },
+      { src: "images/dalma.png", name: "Далматин" },
+      { src: "images/bult.png", name: "Бультерьер" },
     ],
   },
   {
