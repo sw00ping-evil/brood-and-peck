@@ -96,6 +96,7 @@ const GALLERY = [
     items: [
       { src: "images/petpassport.png", name: "Ветпаспорт" },
       { src: "images/snidgetapt.png", name: "Аптечка (снидгет)" },
+       { src: "images/niffapt.png", name: "Аптечка (Нюхлер)" },
       { src: "images/dromarogapt.png", name: "Аптечка (дромарог)" },
     ],
   },
