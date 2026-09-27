@@ -92,6 +92,14 @@ const GALLERY = [
     ],
   },
   {
+    title: "Ветпаспорт и аптечки",
+    items: [
+      { src: "images/petpassport.png", name: "Ветпаспорт" },
+      { src: "images/snidgetapt.png", name: "Аптечка (снидгет)" },
+      { src: "images/dromarogapt.png", name: "Аптечка (дромарог)" },
+    ],
+  },
+  {
     title: "Зоны",
     items: [
       { src: "images/forest.png", name: "Лес" },
@@ -105,14 +113,6 @@ const GALLERY = [
     ],
   },
   {
-    title: "Вывески",
-    items: [
-      { src: "images/вывеска22.png", name: "Вывеска" },
-      { src: "images/вывеска22244.png", name: "Вывеска" },
-      { src: "images/вывеска222343.png", name: "Вывеска" },
-    ],
-  },
-  {
     title: "Варианты подписей",
     items: [
       { src: "images/вариант1.png", name: "Вариант 1" },
@@ -122,6 +122,9 @@ const GALLERY = [
       { src: "images/вариант2222234445556.png", name: "Вариант 5" },
       { src: "images/variant1.png", name: "Вариант 6" },
       { src: "images/hepartofthefamilyvar.png", name: "Вариант 7" },
+      { src: "images/вывеска22.png", name: "Вывеска" },
+      { src: "images/вывеска22244.png", name: "Вывеска" },
+      { src: "images/вывеска222343.png", name: "Вывеска" },
     ],
   },
 ];
