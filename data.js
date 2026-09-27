@@ -102,7 +102,7 @@ const GALLERY = [
       { src: "images/catpillow.png", name: "Лежанка для кошки" },
       { src: "images/catpillow2.png", name: "Лежанка для кошки" },
       { src: "images/hamsterhouse.png", name: "Домик для хомяка" },
-      { src: "images/terra.png", name: "Террариум" },
+      { src: "images/tera.png", name: "Террариум" },
     ],
   },
   {
