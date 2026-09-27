@@ -22,6 +22,7 @@ const GALLERY = [
       { src: "images/Niffle3.png", name: "Нюхль" },
       { src: "images/Niffle4.png", name: "Нюхль" },
       { src: "images/пушишки.png", name: "Пушишки" },
+      { src: "images/клубкопухикарликовые.png", name: "Клубкопухи (карликовые)" },
       { src: "images/шлеппи1.png", name: "Шлеппи" },
       { src: "images/шлеппи2.png", name: "Шлеппи" },
       { src: "images/шлеппи3.png", name: "Шлеппи" },
