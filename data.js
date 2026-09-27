@@ -82,6 +82,13 @@ const GALLERY = [
     items: [
       { src: "images/геккон.png", name: "Геккон" },
       { src: "images/ящерица.png", name: "Ящерица" },
+      { src: "images/bluegecc.png", name: "Геккон (голубой)" },
+      { src: "images/greengecc.png", name: "Геккон (зелёный)" },
+      { src: "images/orangegecc.png", name: "Геккон (оранжевый)" },
+      { src: "images/pinkgecc.png", name: "Геккон (розовый)" },
+      { src: "images/blackeub.png", name: "Эублефар (чёрный)" },
+      { src: "images/purpleeub.png", name: "Эублефар (фиолетовый)" },
+      { src: "images/yelloweub.png", name: "Эублефар (жёлтый)" },
       { src: "images/черепаха.png", name: "Черепаха" },
       { src: "images/рыбка клоун.png", name: "Рыбка-клоун" },
       { src: "images/рыбка хирург.png", name: "Рыбка-хирург" },
