@@ -1,7 +1,20 @@
+
+/
+
+
+
+
+
+
+
+
+
+
+Data · JS
 // Вся галерея. Чтобы добавить картинку: загрузите png в папку images/
 // и допишите строку { src: "images/имя.png", name: "Подпись" } в нужный раздел.
 // Имя файла должно совпадать точно, с учётом больших и маленьких букв.
-
+ 
 const GALLERY = [
   {
     title: "Магические существа",
@@ -11,6 +24,7 @@ const GALLERY = [
       { src: "images/Diricawl2.png", name: "Дириколь" },
       { src: "images/Jobberknoll1.png", name: "Джобберноль" },
       { src: "images/клабберт.png", name: "Клабберт" },
+      { src: "images/ишака.png", name: "Ишака" },
       { src: "images/Kneazle1.png", name: "Книзл" },
       { src: "images/Kneazle2.png", name: "Книзл" },
       { src: "images/Kneazle3.png", name: "Книзл" },
@@ -21,11 +35,11 @@ const GALLERY = [
       { src: "images/Niffle2.png", name: "Нюхль" },
       { src: "images/Niffle3.png", name: "Нюхль" },
       { src: "images/Niffle4.png", name: "Нюхль" },
-      { src: "images/пушишки.png", name: "Пушишки" },
+      { src: "images/пушишки.png", name: "Клубкопухи" },
       { src: "images/клубкопухикарликовые.png", name: "Клубкопухи (карликовые)" },
-      { src: "images/шлеппи1.png", name: "Шлеппи" },
-      { src: "images/шлеппи2.png", name: "Шлеппи" },
-      { src: "images/шлеппи3.png", name: "Шлеппи" },
+      { src: "images/шлеппи1.png", name: "Шлеппи (белый)" },
+      { src: "images/шлеппи2.png", name: "Шлеппи (рыжий)" },
+      { src: "images/шлеппи3.png", name: "Шлеппи (голубой)" },
     ],
   },
   {
@@ -47,6 +61,9 @@ const GALLERY = [
       { src: "images/еж.png", name: "Еж" },
       { src: "images/хомяк.png", name: "Хомяк" },
       { src: "images/мышь иглистая.png", name: "Мышь иглистая" },
+      { src: "images/утконос.png", name: "Утконос" },
+      { src: "images/утконос2.png", name: "Утконос" },
+      { src: "images/кошка.png", name: "Кошка" },
     ],
   },
   {
@@ -68,10 +85,8 @@ const GALLERY = [
     title: "Ферма",
     items: [
       { src: "images/жеребенок.png", name: "Жеребенок" },
-      { src: "images/ишака.png", name: "Ишака" },
       { src: "images/козленок.png", name: "Козленок" },
       { src: "images/лама.png", name: "Лама" },
-      { src: "images/петушок.png", name: "Петушок" },
       { src: "images/поросенок.png", name: "Поросенок" },
       { src: "images/теленок.png", name: "Теленок" },
       { src: "images/ягненок.png", name: "Ягненок" },
@@ -90,6 +105,7 @@ const GALLERY = [
       { src: "images/purpleeub.png", name: "Эублефар (фиолетовый)" },
       { src: "images/yelloweub.png", name: "Эублефар (жёлтый)" },
       { src: "images/черепаха.png", name: "Черепаха" },
+      { src: "images/петушок.png", name: "Петушок" },
       { src: "images/рыбка клоун.png", name: "Рыбка-клоун" },
       { src: "images/рыбка хирург.png", name: "Рыбка-хирург" },
     ],
@@ -102,7 +118,6 @@ const GALLERY = [
       { src: "images/catpillow.png", name: "Лежанка для кошки" },
       { src: "images/catpillow2.png", name: "Лежанка для кошки" },
       { src: "images/hamsterhouse.png", name: "Домик для хомяка" },
-      { src: "images/tera.png", name: "Террариум" },
     ],
   },
   {
@@ -110,7 +125,6 @@ const GALLERY = [
     items: [
       { src: "images/petpassport.png", name: "Ветпаспорт" },
       { src: "images/snidgetapt.png", name: "Аптечка (снидгет)" },
-       { src: "images/niffapt.png", name: "Аптечка (Нюхлер)" },
       { src: "images/dromarogapt.png", name: "Аптечка (дромарог)" },
     ],
   },
@@ -143,3 +157,6 @@ const GALLERY = [
     ],
   },
 ];
+ 
+
+
