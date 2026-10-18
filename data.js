@@ -29,6 +29,8 @@ const GALLERY = [
       { src: "images/шлеппи1.png", name: "Шлеппи (белый)" },
       { src: "images/шлеппи2.png", name: "Шлеппи (рыжий)" },
       { src: "images/шлеппи3.png", name: "Шлеппи (голубой)" },
+      { src: "images/puffpink.png", name: "Клубкопух (розовый)" },
+      { src: "images/cagejobberknoll.png", name: "Клетка для болтрушайки" },
     ],
   },
   {
@@ -68,6 +70,7 @@ const GALLERY = [
       { src: "images/spaniel.png", name: "Спаниель" },
       { src: "images/dalma.png", name: "Далматин" },
       { src: "images/bult.png", name: "Бультерьер" },
+     { src: "images/greysdog.png", name: "Мастиф" },
     ],
   },
   {
