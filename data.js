@@ -137,6 +137,7 @@ const GALLERY = [
   {
     title: "Варианты подписей",
     items: [
+      { src: "images/varianthalloween.png", name: "Хэллоуин вариант" },
       { src: "images/вариант1.png", name: "Вариант 1" },
       { src: "images/вариант2.png", name: "Вариант 2" },
       { src: "images/вариант3.png", name: "Вариант 3" },
