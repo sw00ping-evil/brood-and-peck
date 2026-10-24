@@ -101,6 +101,7 @@ const GALLERY = [
       { src: "images/петушок.png", name: "Петушок" },
       { src: "images/рыбка клоун.png", name: "Рыбка-клоун" },
       { src: "images/рыбка хирург.png", name: "Рыбка-хирург" },
+      { src: "images/pumpkins", name: "тыквомедузы" },
     ],
   },
   {
