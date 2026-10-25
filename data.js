@@ -102,9 +102,9 @@ const GALLERY = [
      { src: "images/петушок.png", name: "Петушок" },
      { src: "images/рыбка клоун.png", name: "Рыбка-клоун" },
      { src: "images/рыбка хирург.png", name: "Рыбка-хирург" },
-     { src: "images/pumpkins", name: "Тыквомедузы" },
-     { src: "images/vampire", name: "Вампир" },
-     { src: "images/fishlamp", name: "Рыба-удильщик" },     
+     { src: "images/pumpkins.png", name: "Тыквомедузы" },
+     { src: "images/vampire.png", name: "Вампир" },
+     { src: "images/fishlamp.png", name: "Рыба-удильщик" },     
     ],
   },
   {
