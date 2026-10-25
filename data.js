@@ -32,7 +32,8 @@ const GALLERY = [
       { src: "images/puffpink.png", name: "Клубкопух (розовый)" },
       { src: "images/cagejobberknoll.png", name: "Клетка для болтрушайки" },
       { src: "images/batforsam.png", name: "Летучая мышь вариант" },
-      { src: "images/batsforgreys", name: "Мыши для Грэйс" },
+      { src: "images/batsforgreys.png", name: "Мыши для Грэйс" },
+      { src: "images/batforgrace.png", name: "Мышь для Грейс" },
     ],
   },
   {
