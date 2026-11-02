@@ -155,6 +155,7 @@ const GALLERY = [
       { src: "images/вывеска22244.png", name: "Вывеска" },
       { src: "images/вывеска222343.png", name: "Вывеска" },
       { src: "images/varnew.png", name: "Вывеска new" },
+      { src: "images/kevinspecialgift.png", name: "special gift" },
     ],
   },
 ];
