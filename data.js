@@ -30,6 +30,7 @@ const GALLERY = [
       { src: "images/шлеппи2.png", name: "Шлеппи (рыжий)" },
       { src: "images/шлеппи3.png", name: "Шлеппи (голубой)" },
       { src: "images/puffpink.png", name: "Клубкопух (розовый)" },
+     { src: "images/puffsk1.png", name: "Клубкопух (черный)" },
       { src: "images/cagejobberknoll.png", name: "Клетка для болтрушайки" },
       { src: "images/batforsam.png", name: "Летучая мышь вариант" },
       { src: "images/batsforgreys.png", name: "Мыши для Грэйс" },
